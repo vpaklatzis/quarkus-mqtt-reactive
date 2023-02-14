@@ -1,0 +1,15 @@
+# MQTT sink
+mp:
+  messaging:
+    outgoing:
+      topic-temp:
+        type:
+          smallrye-mqtt
+        topic:
+          temps
+        host:
+          tcp://localhost
+        port:
+          1884
+        auto-generated-client-id:
+          true
